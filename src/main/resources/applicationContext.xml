@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:component-scan base-package="com.company.spring.context"/>
+
+    <bean name="studentPrototype" class="com.company.spring.context.StudentPrototype" id="prototype"
+          init-method="initMethod" destroy-method="destroyMethod">
+        <constructor-arg name="age" value="22" index="0"/>
+        <constructor-arg name="name" value="ali" index="1"/>
+        <constructor-arg name="family" value="alavi" index="2"/>
+    </bean>
+
+    <bean name="studentSingleton" class="com.company.spring.context.StudentSingleton" id="singleton"
+          init-method="initMethod" destroy-method="destroyMethod">
+        <constructor-arg name="age" value="25" index="0"/>
+        <constructor-arg name="name" value="ahmmad" index="1"/>
+        <constructor-arg name="family" value="ahmmadi" index="2"/>
+    </bean>
+
+
+</beans>
