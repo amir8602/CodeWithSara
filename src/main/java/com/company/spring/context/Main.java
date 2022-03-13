@@ -11,7 +11,7 @@ public class Main {
 
         StudentPrototype prototype = (StudentPrototype) context.getBean("prototype");
         StudentSingleton singleton = (StudentSingleton) context.getBean("singleton");
-
+        System.out.println("Sara");
 
 
     }
