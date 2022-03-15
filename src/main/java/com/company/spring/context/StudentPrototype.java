@@ -14,6 +14,8 @@ public class StudentPrototype {
     private int age;
     private String name;
     private String family;
+    private Book book;
+
 
 
     public void initMethod(){

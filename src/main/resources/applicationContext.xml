@@ -14,6 +14,7 @@
         <constructor-arg name="age" value="22" index="0"/>
         <constructor-arg name="name" value="ali" index="1"/>
         <constructor-arg name="family" value="alavi" index="2"/>
+        <constructor-arg name="book" ref="book2"/>
     </bean>
 
     <bean name="studentSingleton" class="com.company.spring.context.StudentSingleton" id="singleton"
@@ -21,6 +22,11 @@
         <constructor-arg name="age" value="25" index="0"/>
         <constructor-arg name="name" value="ahmmad" index="1"/>
         <constructor-arg name="family" value="ahmmadi" index="2"/>
+    </bean>
+
+    <bean name="book" class="com.company.spring.context.SportBook" id="book2" >
+        <constructor-arg name="price" value="12000"/>
+        <constructor-arg name="title" value="5pm"/>
     </bean>
 
 
